@@ -1,4 +1,4 @@
-package ink.softs.demo01;
+package ink.softs.demo01.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

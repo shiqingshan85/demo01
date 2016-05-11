@@ -6,9 +6,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import java.util.ArrayList;
+
+import ink.softs.demo01.adapter.MyAdapter;
+import ink.softs.demo01.fragments.GFragment;
+import ink.softs.demo01.fragments.LFragment;
+import ink.softs.demo01.fragments.RwlFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
