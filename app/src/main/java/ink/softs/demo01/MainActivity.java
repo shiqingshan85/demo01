@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fragments.add(new RwlFragment());
         fragments.add(new GFragment());
+        fragments.add(new LFragment());
     }
 
     private void initView() {
