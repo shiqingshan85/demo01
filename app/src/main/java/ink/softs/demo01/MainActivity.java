@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initData() {
         fragments = new ArrayList<>();
+
+        fragments.add(new RwlFragment());
     }
 
     private void initView() {
