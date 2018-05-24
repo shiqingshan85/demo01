@@ -1,6 +1,7 @@
 package ink.softs.demo01;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private ViewPager viewPager;
     private ArrayList<Fragment> fragments;
+    private FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +25,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         initView();
 
-
+        manager = getSupportFragmentManager();
+        MyAdapter myAdapter = new MyAdapter(manager, fragments);
+        viewPager.setAdapter(myAdapter);
     }
 
     private void initData() {
         fragments = new ArrayList<>();
 
         fragments.add(new RwlFragment());
+        fragments.add(new GFragment());
     }
 
     private void initView() {
